@@ -1,0 +1,56 @@
+
+body {
+    background: linear-gradient(70deg, orange 60%, cyan);
+     }
+   
+   #topnav {
+     overflow: hidden;
+     position:  sticky;
+     top: 0px;
+     background-color: linear-gradient(70deg, orange 60%, cyan);
+   }
+   
+   #topnav a{
+     float: left;
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px;
+     text-decoration: none;
+     margin: 0px 10px;
+   }
+   
+   /* changes the color of the navigation bar when hovering over a tab */
+   #topnav a:hover{
+     background-color: cyan;
+     color: white;
+     text-decoration: underline;
+   }
+   
+   /* makes your webpage adaptable to each different type of media device people use */
+   /* @media 
+   (prefer-reduced-motion: no-preference {
+     html {
+       scroll-behavior: smooth;
+     }
+   })  */
+
+h1, h2, h3, p {
+    color: white;
+    text-align: center;
+}
+
+div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/*Selecting both text and image class 
+Use float to the left to have both elements float to the left of the parent class (ie. div)
+*/
+.text, .image{
+    display: flex;
+    width: 25%;
+    padding: 20px;
+}
