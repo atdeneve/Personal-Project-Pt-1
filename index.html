@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Deneve - Personal Website</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="./about.html">About</a>
-    <a href="./portfolio.html">Portfolio</a>
+    <nav class="topnav" id="topnav"> <!--You want to make the navigation "sticky" so it shows on all the pages when you click on it-->
+        <!--Can copy the navigation to all our pages, not very clean but feasible, does not align with dry code practices : ie you dont want to repeat yourself-->
+        <!--Alternate option, use javascript --> 
+    <a class="navbaroptions" href="./index.html">Home</a>
+    <a class="navbaroptions" href="./about.html">About</a>
+    <a class="navbaroptions" href="./portfolio.html">Portfolio</a>
     </nav>
-    <h1>Home</h1>
-    <script src="javascript.js"></script>
+    <header class="home-header"><h1>about me</h1></header>
+    <div class="home-about-me">
+    <div class="home-list">
+        <span class="home-list-item">26 years</span>
+        <span class="home-list-item-seperation">/</span>
+        <span class="home-list-item">Denver</span>
+        <span class="home-list-item-seperation">/</span>
+        <span class="home-list-item">Fullstack Student</span>
+    </div>
+    <div class="blurb" id="homeblurb">I started Fullstack hoping to become a prolific fullstack developer. I have passionate about learning 
+        and love that there is always something to learn when coding. I initially became interested in coding 
+        after working with a software engineer at my previous job to help make our company's data software more 
+        user-friendly. After doing some independent research I found a new passion and felt the desire for a career change!
+    </div>
+    <div class="softwares">
+        <h3 id="softwares-heading">Skills</h3>
+        <img id="css-image" class="softwares-image-list" src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-svg-vector.svg">
+        <img id="html-image" class="softwares-image-list" src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.svg">
+        <img id="javascript-image" class="softwares-image-list" src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png">
+    </div>
+</div>
+    <script src="./javascript.js"></script>
 </body>
 </html>
