@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Deneve - Personal Website</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Deneve - Personal Website</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <nav class="topnav" id="topnav"> <!--You want to make the navigation "sticky" so it shows on all the pages when you click on it-->
-        <!--Can copy the navigation to all our pages, not very clean but feasible, does not align with dry code practices : ie you dont want to repeat yourself-->
-        <!--Alternate option, use javascript --> 
-    <a class="navbaroptions" href="./index.html">Home</a>
-    <a class="navbaroptions" href="./about.html">About</a>
-    <a class="navbaroptions" href="./portfolio.html">Portfolio</a>
+<header>
+    <div class="nav-toggle">
+        <i class="material-icons">menu</i>
+    </div>
+    <nav class="topnav active" id="topnav">
+        <ul> 
+            <li><a class="navbaroptions" href="./index.html">Home</a></li>
+            <li><a class="navbaroptions" href="./about.html">About</a></li>
+            <li><a class="navbaroptions" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="navbaroptions" href="./contact.html">Contact</a></li>
+        </ul>
     </nav>
+</header>
+<body>
     <header class="home-header"><h1>about me</h1></header>
+    <div class="big-container">
     <div class="home-about-me">
     <div class="home-list">
         <span class="home-list-item">26 years</span>
@@ -28,6 +36,8 @@
         after working with a software engineer at my previous job to help make our company's data software more 
         user-friendly. After doing some independent research I found a new passion and felt the desire for a career change!
     </div>
+    </div>
+    <div class="software-section">
     <div class="softwares">
         <h3 id="softwares-heading">Skills</h3>
         <img id="css-image" class="softwares-image-list" src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-svg-vector.svg">
@@ -35,6 +45,7 @@
         <img id="javascript-image" class="softwares-image-list" src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png">
     </div>
 </div>
-    <script src="./javascript.js"></script>
+</div>
+    <script defer src="./javascript.js"></script>
 </body>
 </html>

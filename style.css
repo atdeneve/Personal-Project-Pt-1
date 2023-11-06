@@ -1,61 +1,93 @@
 
-  body {
- background: linear-gradient(70deg, orange 60%, cyan);
-  }
+body {
+  /* background: linear-gradient(70deg, orange 60%, cyan); */
+  color: #888;
+  background: #293f50;
 
-#topnav {
-  overflow: hidden;
-  position: sticky;
-  top: 0px;
-  background-color: linear-gradient(70deg, orange 60%, cyan);
-}
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-#topnav a{
-  float: left;
+   }
+ 
+.nav-toggle {
   display: block;
+  cursor: pointer;
+  padding: 15px;
   color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  margin: 0px 10px;
+  font-size: 24px;
+  z-index: 999;
 }
 
-/* changes the color of the navigation bar when hovering over a tab */
-#topnav a:hover{
-  background-color: cyan;
-  color: white;
-  text-decoration: underline;
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* makes your webpage adaptable to each different type of media device people use */
-/* @media 
-(prefer-reduced-motion: no-preference {
-  html {
-    scroll-behavior: smooth;
-  }
-}) */
 
+ #topnav {
+   top: 0px;
+   background-color: linear-gradient(70deg, orange 60%, cyan);
+   text-align: right;
+   margin-top: 30px;
+ }
+
+ol, ul {
+  list-style: none;
+}
+
+ #topnav a{
+   color: white;
+   padding: 14px;
+   text-decoration: none;
+   margin: 0px 10px;
+ }
+
+ .topnav li{
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+ }
+
+ .nav li:last-child {
+  margin-right: 0; 
+ }
+ 
+ /* changes the color of the navigation bar when hovering over a tab */
+ #topnav a:hover{
+   background-color: white;
+   color: black;
+   text-decoration: underline;
+ }
+ 
 h1{
   color: white;
+  text-align: left;
+  font-size: 8rem;
+  margin-top: 30px;
 }
  
 header {
   text-align: center;
   color: white;
   background-color: linear-gradient(70deg, orange 60%, cyan); 
+}
 
+.big-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .home-about-me{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 30px;
+  margin-right: 30px;
   width: 30%;
-  text-align: center;
+  text-align: left;
 }
+
 
 .blurb{
   color: white;
+  text-align: left;
 }
 
 .home-list{
@@ -64,8 +96,14 @@ header {
   color: white;
 }
 
+.software-section {
+
+}
+
 #softwares-heading{
   color: white;
+  position: relative;
+  left: 175px;
 }
 
  .home-list-item .home-list-item-seperation{
@@ -73,8 +111,34 @@ header {
 } 
 
 .softwares-image-list{
-  width: 50%;
-  height: 50%;
+  width: 150px;
+  height: 150px;
 }
 
+/* @media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
 
+  #topnav {
+    display: none; 
+    position: absolute;
+    background-color: linear-gradient(70 deg, orange 60%, cyan);
+    text-align: center;
+    width: 100%;
+  }
+
+  #topnav.active {
+    display: block;
+  }
+
+  .topnav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .topnav ul li {
+    display: block; 
+    margin: 0;
+  }
+} */
