@@ -1,0 +1,87 @@
+body {
+    background: linear-gradient(70deg, orange 60%, cyan);
+        box-sizing: border-box;
+      
+     }
+   
+   #topnav {
+     overflow: hidden;
+     position:  sticky;
+     top: 0px;
+     background-color: linear-gradient(70deg, orange 60%, cyan);
+   }
+   
+   #topnav a{
+     float: left;
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px;
+     text-decoration: none;
+     margin: 0px 10px;
+   }
+   
+   /* changes the color of the navigation bar when hovering over a tab */
+   #topnav a:hover{
+     background-color: cyan;
+     color: white;
+     text-decoration: underline;
+   }
+
+   h1 {
+    color: white;
+    text-align: center;
+    font-size: 3.5em;
+   }
+
+  form{
+    text-align: center;
+    width: 550px;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  #name, #email {
+    width: 200px;
+    height: 20px;  
+}
+
+  #text {
+    height: 250px;
+    width: 300px;
+  }
+
+  #namelabel, #emaillabel, #textlabel {
+    color: white;
+    font-size: 2em;
+  }
+
+ #submitbutton {
+    width: 100px;
+    position: relative;
+    background-color: black;
+    border-color: transparent;
+    left: 250px;
+    font-size: 1.5em;
+    color: white;
+
+
+  }
+
+  #submitbutton:hover {
+    background-color: rgb(255, 255, 255); 
+    transition: background-color 1s;
+    color: black;
+  }
+
+  @media only screen and (max-width: 569px ) {
+    body {
+      min-width: 569px;
+    }
+  }

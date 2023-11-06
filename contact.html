@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <nav  id="topnav"> <!--You want to make the navigation "sticky" so it shows on all the pages when you click on it-->
+        <!--Can copy the navigation to all our pages, not very clean but feasible, does not align with dry code practices : ie you dont want to repeat yourself-->
+        <!--Alternate option, use javascript --> 
+    <a class="navbaroptions" href="./index.html">Home</a>
+    <a class="navbaroptions" href="./about.html">About</a>
+    <a class="navbaroptions" href="./portfolio.html">Portfolio</a>
+    <a class="navbaroptions" href="./contact.html">Contact</a>
+    </nav>
+    <h1>Reach me!</h1>
+    <form class="form" action="./succes.html">
+        <label id="namelabel" for="name" >Name:  <input class="forminput" id="name" type="name"></label><br><br>
+        <label id="emaillabel" for="email">Email: <input class="forminput" id="email" type="email"></label><br><br>
+        <label id="textlabel" for="text"> Message: <input class="forminput" id="text" type="text"></label><br><br>
+        <input id="submitbutton" type="submit" value="submit">
+    </form>
+    
+</body>
+</html>
